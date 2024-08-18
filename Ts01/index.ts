@@ -29,3 +29,32 @@ console.log(sum);
 
 //lets  create a calculater
 //Functions has 3 argument
+
+function  calculatedsum1 (a:number, b:number,
+     type: "sum" |"sub"| "mul" |"div" //type:string=> if any send random string value it will  run so strict typings is done
+    ):number{
+if(type==="sum"){
+    return a+b;
+}
+if (type==="sub") {
+    return a-b;
+}
+if (type==="mul") {
+    return a*b ;
+}
+if (type==="div") {
+    return a/b;
+    
+}
+return -1;
+}
+
+const asw = calculatedsum1(3,2 ,"mul") //if will give wrong argument it will show error
+console.log(asw);
+//typscript throws the compilation error and js throws the  run time error
+
+// Typescript complier does't run or execute code  it only checks the type is correct or not
+// 1st it takes input of the index.ts  and checks the type is correct or not then only it  convert it into the js and then the js compiler compiles it
+// so the code is not executed untill the types are written.
+ // the typescript throws a compilation errors if the types are not written.
+ //typecript is Development tool and helps for better code with less errors
