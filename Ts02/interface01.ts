@@ -22,16 +22,28 @@ export function greet(person:{
 
  // let us use interface
 
+ //when use an interface 1stletter should be in capital letter
+
+ // Create an object that conforms to the Person interface
  interface Person{
   name:  string;
   age: number;
 }
 
+// Function using the Person interface
 export function greett(person:Person):string{
   return "hello mr " + person.name + " your age is " + person.age;
 }
+//to use is complex 
+/*export function greett(person:Person):string{
+  return "hello mr " + " your age is " + person.age;
+}*/
 
 console.log(greett({
   name:"shantanu",
   age:23
 }))
+////output  = hello mr shantanu your age is 23
+
+// Using interfaces in TypeScript classes allows you to define contracts for the shape of an object, which the class must adhere to.
+// This ensures that the class implements all the properties and methods specified in the interface.
