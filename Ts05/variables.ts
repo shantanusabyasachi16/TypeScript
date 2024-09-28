@@ -19,12 +19,16 @@ let isLoggedIn: boolean = false
 
 
 
-// anyiables
+// any variables
 
+//we can use any if we don't want a type checking
+
+//let hero; it is not a good practice
 let hero: string;
 
 function getHero(){
     return "thor"
+    //return false
 }
 
 hero = getHero()
