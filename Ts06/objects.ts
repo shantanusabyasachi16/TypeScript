@@ -7,6 +7,12 @@ let user ={
 function createuser ({name:string, isPaid:boolean}){
 
 }
-createuser({})
+
+//object which return object
+createuser({name: "shantanu", isPaid: true})
+
+function createCourse ():{name:string, price:number}{
+return{name:"node.js" , price:2344}
+}
 
 export{}
