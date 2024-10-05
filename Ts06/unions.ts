@@ -7,7 +7,7 @@ let score: number| string = 55
 score=88
 score="88"
 
-type User={
+type User1={
     name:string,
     id:number,
 }
@@ -17,7 +17,7 @@ type Admin={
     id:number
 }
 
-let allmembers :User|Admin={ name:"shantanu", id:23, }
+let allmembers :User1|Admin={ name:"shantanu", id:23, }
   allmembers= {username:"dugu",id:89}
 
 
@@ -37,3 +37,12 @@ function getID(id:number| string){
     id.toLowerCase()
    }
     }
+
+
+    
+//array
+const data: number[]=[1,2,3]
+const data2: string[]=["1","2","3"]
+
+//const data3 : number|string[]=[1,2,3] // we have to keep it on ()
+const data3 : (number|string)[]=[1,"2",3]
