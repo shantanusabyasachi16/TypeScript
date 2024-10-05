@@ -19,3 +19,21 @@ type Admin={
 
 let allmembers :User|Admin={ name:"shantanu", id:23, }
   allmembers= {username:"dugu",id:89}
+
+
+  //
+  
+//    function getID(id:number| string){
+//     console.log( `ID is ${id}`);
+    
+//    }
+//    getID(3)
+//    getID("45")
+
+
+function getID(id:number| string){
+      //id.toLowerCase()// it will not recognise because it is accepecting to datatypes.
+   if (typeof id === "string") {
+    id.toLowerCase()
+   }
+    }
