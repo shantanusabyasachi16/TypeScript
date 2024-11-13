@@ -44,3 +44,22 @@ heros.toLowerCase()
 
 // it makes types more strict
 
+
+//swap fuction
+//same types
+function swap<T>( a:T, b:T):[T,T]
+{
+return [b,a]
+}
+
+let ans = swap(1,2)
+let ans2 = swap("1","2")
+
+//fuction have diffrent types
+
+function swap2 <T,U>(a:T,b:U):[U,T]{
+    return [b,a]
+}
+
+let val= swap2(1,"2");
+let val2 = swap2(1,true)
