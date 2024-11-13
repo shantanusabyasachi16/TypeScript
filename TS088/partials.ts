@@ -6,6 +6,16 @@ interface Todo{
 }
 
 type upadatinput = Partial<Todo>;
+
+/* it means
+
+upadatinput=  {
+ id?: number|undefined;
+   completed?: boolean|undefined;
+}
+   */
+
+
 //The Partial<T> utility type in TypeScript takes an interface (or type) T and makes all of its properties optional. So Partial<Todo> will create a new type where both id and completed are optional.
 
 function updateTodo(id:number ,updates: upadatinput){
