@@ -56,10 +56,11 @@ let ans = swap(1,2)
 let ans2 = swap("1","2")
 
 //fuction have diffrent types
+//we have to give  2templates for 2 diffrent types e.i T,U
 
 function swap2 <T,U>(a:T,b:U):[U,T]{
     return [b,a]
 }
 
-let val= swap2(1,"2");
-let val2 = swap2(1,true)
+let val= swap2(1,"2");//string , number
+let val2 = swap2(1,true)//number, boolean
