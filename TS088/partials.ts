@@ -10,8 +10,8 @@ type upadatinput = Partial<Todo>;
 /* it means
 
 upadatinput=  {
- id?: number|undefined;
-   completed?: boolean|undefined;
+id?        : number|undefined;
+completed? :  boolean|undefined;
 }
    */
 
